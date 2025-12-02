@@ -1,21 +1,25 @@
 using UnityEngine;
-using TMPro;
+using Unity.Netcode;
 
-public class detect : MonoBehaviour
+public class detect : NetworkBehaviour
 {
+    private Rigidbody rb;
 
-    void Start(){}
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
     private void OnCollisionEnter(Collision other)
     {
-        // If the object we hit is called "Board", rotate randomly
         if (other.gameObject.name == "Board")
         {
-            // Generate a random rotation
             Quaternion randomRotation = Random.rotation;
-            transform.rotation = randomRotation;
+
+            if (rb != null)
+                rb.MoveRotation(randomRotation);
+            else
+                transform.rotation = randomRotation;
         }
     }
-
-   
 }

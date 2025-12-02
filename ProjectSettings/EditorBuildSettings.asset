@@ -5,12 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 0
     path: Assets/New Scene.unity
     guid: e80d35a017439fb41beb8c4bafa1a827
+  - enabled: 0
+    path: Assets/Scenes/DanielsScene.unity
+    guid: e575fbb2012568949ae2b6287913d694
+  - enabled: 1
+    path: Assets/Scenes/SnakeAndLadder.unity
+    guid: 2799c4a168367ca4a895c7f14d454e93
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: a44ad34a82499cf478f640a7f4b82566, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
